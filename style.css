@@ -17,6 +17,7 @@ html,body {
 
 main {
     width: 100%;
+   
     min-height: 100vh;
     scroll-behavior: smooth;
    
@@ -257,7 +258,7 @@ border-radius: 10px;
     gap: 1rem;
 }
 .rendering-section .diagram{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #d57070;
@@ -271,6 +272,13 @@ border-radius: 10px;
     display: flex;
     font-size: 0.8rem;
     
+}
+.showd {
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #d57070;
+    width: fit-content;
 }
 
 @media (max-width: 1024px) {

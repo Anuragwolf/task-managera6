@@ -140,12 +140,14 @@ function handleTaskClick(e) {
 
     let editSection = e.target.closest('.editsection');
     let input = editSection.querySelector('input');
-    let selectst= editSection.querySelector('.edit');
+    let selectct= editSection.querySelector('#editcategory');
+    let selectst= editSection.querySelector('#editstatus');
     let taskd= taskarr.find((elem)=> elem.id === id);
 
     
     taskd.tname=input.value;
-    taskd.taskcategory=select.value;
+    taskd.taskcategory=selectct.value;
+     taskd.status=selectst.value;
     renderTasks();
     console.log(taskd);
     }
@@ -208,4 +210,14 @@ form.addEventListener('submit',(e)=> {
 
 tasklist.addEventListener('click',handleTaskClick);
 
+let diagram = document.querySelector('.diagram');
 
+document.querySelector('.showd').addEventListener('click', () => {
+    if (diagram.style.display === 'none') {
+        diagram.style.display = 'flex';
+        document.querySelector('.showd').textContent='hide';
+    } else {
+        diagram.style.display = 'none';
+        document.querySelector('.showd').textContent='show diagram';
+    }
+});
