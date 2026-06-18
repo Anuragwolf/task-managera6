@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+    
+    font-style: normal;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+   
+    display: flex;
+    gap:2rem;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(202, 195, 195, 0.589);
+   
+}
+header {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 1rem; 
+   background-color: #f24d4d;
+   color: red;
+   text-shadow: 2px 1px 0.2px black;
+}
+header span {
+    color: whitesmoke;
+}
+header button {
+    padding: 0.4rem;
+
+    border: none;
+    border-radius: 10px;
+}
+.dark {
+    background: #121212;
+    color: white;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    font-size: 3rem;
+}
+
+.text span {
+    color: #f24d4d;
+}
+.text p {
+    font-weight: 200;
+}
+.formdiv {
+   position: absolute;
+
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.623) ;
+
+}
+.formdiv h4 {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 1.0rem;
+}
+.formdiv form {
+    display: flex;
+   
+    margin: auto;
+    flex-direction: column;
+    font-size:2rem;
+    background-color: whitesmoke;
+    padding: 2rem;
+    gap: 2rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.409);
+}
+form h3 {
+    color: 
+}
+form input {
+    border: 1px gainsboro;
+    padding: 0.8rem;
+    border-radius: 10px;    
+}
+
+form select {
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+form button {
+    border: none;
+    background-color: rgb(55, 112, 165);
+    padding:1rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tasks {
+    background-color: transparent;
+     flex-direction: column;
+
+    margin: 0px 1rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap:1rem
+}
+.menu {
+    display:flex;
+   
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;  
+     background-color: #f24d4d0c;
+    
+}
+.menu button {
+ border: none;
+ background-color: #f24d4d;
+ padding: 10px;
+ 
+ border-radius: 10px;
+}
+.taskshow{
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 1rem;
+    
+}
+
+.task {
+    background-color: #f24d4dbd;
+    padding: 1rem 2rem;
+    margin: 0rem 0.3    rem;
+
+    flex-direction: column;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.tasktext {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+.taskbutton {
+    width: fit-content;
+    
+    display:flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskbutton button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.editbtn {
+    background-color: darkorange;
+}
+
+.delete {
+    background-color: red;
+}
+
+.completebtn {
+    background-color: rgb(112, 152, 52);
+}
+
+.editsection {
+    display: none;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+
+}
+.editsection input{
+padding: 10px; 
+border: none;
+border-radius: 10px;
+}
+.editsection select {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.editsection button {
+    padding: 0.5rem;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+.taskcontaint{
+    display: flex;
+    justify-content: space-between;
+}
+.taskpending {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+.step {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.arrow {
+    padding: 1rem;
+}
+
+.rendering-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.rendering-section .diagram{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #d57070;
+    border-radius: 10px;
+    padding: 10px;
+
+    width: fit-content;
+
+}
+.diagram1,.diagram2 {
+    display: flex;
+    font-size: 0.8rem;
+    
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        font-size: 2rem;
+    }
+
+    .task {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        font-size: 2rem;
+    }
+
+    .task {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .task {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .taskcontaint {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tasktext {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .taskbutton {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .formdiv form {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+
+    .editsection {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .diagram1,.diagram2 {
+    display: flex;
+    flex-direction: column;
+    
+}
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+        <h1>
+        Coder.<span>Task</span>
+        </h1>
+        <div class="btns">
+            <button id="addtask">Add Task</button>
+            <button id="darkbtn"><i class="fa-solid fa-sun"></i></button>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="text">
+            <h3>👋Hello <span>Coder</span>🧑‍💻</h3>
+        <p> there is <span style="color: white;">Task</span> to be done</p>
+        </div>
+        <div></div>
+    </div>
+ <div class="formdiv">
+    
+    <form >
+        <h4 onclick="closef()">X</h4>
+        <h3>Create task</h3>
+        <input type="text" placeholder="enter your task title">
+           <select id="category">
+        <option value="coding-task">coding task</option>
+        <option value="personal-task">personal task</option>
+        <option value="professional-task">professional task</option>
+    </select>
+    <button>Add task</button>
+    </form> 
+   </div> 
+   <div class="tasks">
+    <div class="menu">
+        <button class="alltask">all task</button>
+        <button  class="pendingt"  >pending task</button>
+        <button class="completedt">completed task</button>
+    </div>
+    <div class="taskshow">
+     
+     </div>
+     
+   <section class="rendering-section">
+  <h2>Browser Rendering Pipeline</h2>
+
+  <div class="diagram">
+    <div class="diagram1">
+        <div class="step">HTML</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">Parsing</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">Tokenization</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">DOM Tree</div>
+
+
+
+  <div class="step">CSS</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">CSSOM Tree</div>
+
+    </div>
+
+
+  <div class="diagram2">
+    <div class="step">DOM Tree + CSSOM Tree</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">Render Tree</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">Layout (Reflow)</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">Paint</div>
+  <div class="arrow">➡️</div>
+  <div class="step">Composite</div>
+  <div class="arrow">➡️</div>
+
+  <div class="step">Screen</div>
+  </div>
+  </div>
+  </div>
+</section>
+   </div>
+   
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
